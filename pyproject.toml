@@ -1,0 +1,25 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "control_ablations"
+
+version = "0.0.1"
+authors = [
+  { name="Rachel Trimble", email="rjt42@cam.ac.uk" },
+]
+description = "Basic infrastructure for abaltion and sweep experiments for control and optimisation algorithms"
+readme = "README.md"
+requires-python = ">=3.8"
+classifiers = [
+    "Programming Language :: Python :: 3"
+]
+
+[project.urls]
+"Homepage" = "https://github.com/racheltrimble/control_ablations"
+
+[tool.pytest.ini_options]
+addopts = [
+    "--import-mode=importlib",
+]
